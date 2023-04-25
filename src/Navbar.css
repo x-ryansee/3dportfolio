@@ -9,26 +9,29 @@
     transition: all 0.3s ease;
   }
   
-  .navbar__toggle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .navbar__list {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    overflow-y: auto;
-  }
+.navbar__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* updated height */
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%; /* updated width */
+  transition: all 0.3s ease;
+}
+
   
   .navbar__list.active {
-    width: 200px;
+    width: calc(100% - 50px); /* set the width to the remaining space */
   }
   
   .navbar__item {
